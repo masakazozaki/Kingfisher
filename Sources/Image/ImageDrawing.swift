@@ -201,7 +201,7 @@ extension KingfisherWrapper where Base: KFCrossPlatformImage {
     }
     #endif
     
-    #if os(iOS) || os(tvOS)
+    #if os(iOS) || os(visionOS) || os(visionOS)|| os(tvOS)
     func resize(to size: CGSize, for contentMode: UIView.ContentMode) -> KFCrossPlatformImage {
         switch contentMode {
         case .scaleAspectFit:
